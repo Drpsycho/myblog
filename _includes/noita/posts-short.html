@@ -1,0 +1,9 @@
+{% for post in site.posts %}
+<div class="post-short">
+  <h4>
+    {{ post.title }} <small>{{ post.date | date: '%F' }}</small>
+  </h4>
+  <p>{{ post.description }}</p>
+  <p><a href="{{ post.url }}" class="button tiny radius">Читать дальше →</a></p>
+</div>
+{% endfor %}
